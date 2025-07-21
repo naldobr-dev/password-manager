@@ -49,7 +49,7 @@ Um gerenciador de senhas pessoal, seguro e responsivo, desenvolvido com Node.js,
 1. Acesse a pasta `backend`:
    ```bash
    cd backend
-````
+   ````
 
 2. Instale as dependências:
 
