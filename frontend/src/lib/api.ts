@@ -1,4 +1,4 @@
-const API_URL = `${import.meta.env.VITE_API_URL}/api/passwords` || 'http://localhost:5000/api/passwords';
+const API_URL = import.meta.env.VITE_API_PASSWORDS_URL || 'http://localhost:5000/api/passwords';
 const API_KEY = import.meta.env.VITE_API_KEY || '';
 
 async function apiRequest<T>(endpoint = '', method = 'GET', body?: any): Promise<T> {
