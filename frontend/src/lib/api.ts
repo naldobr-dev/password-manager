@@ -1,5 +1,5 @@
-const API_URL = 'http://localhost:5000/api/passwords';
-const API_KEY = 'ebe812d2-a4f6-4cc3-b71f-4c9df63056fc'; // Substitua pela sua chave real ou use variável de ambiente no futuro
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/passwords';
+const API_KEY = import.meta.env.VITE_API_KEY || '';
 
 async function apiRequest<T>(endpoint = '', method = 'GET', body?: any): Promise<T> {
   const token = localStorage.getItem('token');
